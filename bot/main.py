@@ -1,8 +1,8 @@
 
 
-from bot.utils.keyboards import get_currency_keyboard
+
 from bot.handlers.commands import start_command, help_command
-from bot.handlers.messages import handle_message, handle_response
+from bot.handlers.messages import handle_message
 from bot.handlers.conversation import (
     AMOUNT, FROM_CURRENCY, TO_CURRENCY,
     convert_command, handle_amount,
@@ -10,10 +10,10 @@ from bot.handlers.conversation import (
     cancel_command
 )
 from bot.config import TOKEN, BOT_USERNAME
-from typing import Final
 
-import requests
-from telegram import Update, ReplyKeyboardMarkup, ReplyKeyboardRemove
+
+
+from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandler, filters, ConversationHandler
 
 # Setup logging
