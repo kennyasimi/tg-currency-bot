@@ -2,7 +2,6 @@ from telegram import Update
 from telegram.ext import ContextTypes
 from bot.utils.logger import logger
 from bot.services.exchange_service import ExchangeService
-
 def handle_response(text: str) -> str:
     processed_text = text.lower().strip()
 
