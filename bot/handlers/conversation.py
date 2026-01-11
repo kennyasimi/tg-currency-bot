@@ -41,7 +41,7 @@ async def handle_from_currency(update: Update, context: ContextTypes.DEFAULT_TYP
 
     context.user_data['from_currency'] = update.message.text
     await update.message.reply_text(
-        f"Now select target currency:",
+        "Now select target currency:",
         parse_mode='Markdown',
         reply_markup=get_currency_keyboard()
     )
