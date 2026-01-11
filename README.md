@@ -60,5 +60,5 @@ flake8 (linting)
 The .venv directory and environment variables are excluded from version control
 The bot token is never stored in the repository
 
-
+- [README на Русский](README.ru.md)
 
